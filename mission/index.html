@@ -3,27 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f6f8">
-  <meta name="description" content="Миссия Ассоциации добрых дел: люди, которые делают минимум одно доброе дело в месяц — для людей, животных или природы.">
-  <title>Наша миссия — Ассоциация добрых дел</title>
+  <meta name="theme-color" content="#f7faff">
+  <meta name="description" content="Миссия Ассоциации Добрых Дел: люди, которые делают минимум одно доброе дело в месяц — для людей, животных или природы.">
+  <title>Наша миссия — Ассоциация Добрых Дел</title>
   <style>
     :root {
-      --ink: #101826;
-      --muted: #667085;
-      --line: #dfe5ec;
+      --ink: #122033;
+      --muted: #66758a;
+      --line: #dce8f5;
       --paper: #ffffff;
-      --canvas: #f4f6f8;
-      --blue: #6688b1;
-      --blue-dark: #45678e;
-      --blue-soft: #edf2f7;
-      --sky: #9eb5cf;
-      --gold: #d3a15f;
-      --gold-soft: #f8f1e6;
-      --green: #66877a;
-      --green-soft: #edf3f0;
-      --violet: #827d9a;
-      --violet-soft: #f1eff5;
-      --shadow: 0 22px 65px rgba(24, 52, 93, .12);
+      --canvas: #f7faff;
+      --blue: #2f75f6;
+      --blue-dark: #2f75f6;
+      --blue-soft: #edf4ff;
+      --sky: #9fc7f3;
+      --warm: #f3b35d;
+      --warm-soft: #fff4e4;
+      --shadow: 0 22px 65px rgba(47, 117, 246, .13);
       --radius: 32px;
       --page: min(1180px, calc(100% - 40px));
     }
@@ -40,7 +36,7 @@
       overflow-x: clip;
       color: var(--ink);
       background:
-        radial-gradient(circle at 8% 0%, rgba(129, 158, 194, .09), transparent 25rem),
+        radial-gradient(circle at 8% 0%, rgba(159, 199, 243, .20), transparent 25rem),
         var(--canvas);
       font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       -webkit-font-smoothing: antialiased;
@@ -75,7 +71,7 @@
       position: relative;
       z-index: 10;
       border-bottom: 1px solid rgba(16, 24, 38, .08);
-      background: rgba(244, 246, 248, .88);
+      background: rgba(247, 250, 255, .90);
       backdrop-filter: blur(18px);
     }
 
@@ -94,7 +90,7 @@
       height: 48px;
       border: 1px solid var(--line);
       border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(71, 99, 132, .10);
+      box-shadow: 0 8px 20px rgba(47, 117, 246, .10);
     }
 
     .brand span {
@@ -164,7 +160,7 @@
       z-index: -1;
       inset: 8% -5% -4% 7%;
       border-radius: 45%;
-      background: linear-gradient(135deg, rgba(102, 136, 177, .17), rgba(211, 161, 95, .14));
+      background: linear-gradient(135deg, rgba(47, 117, 246, .16), rgba(159, 199, 243, .24));
       filter: blur(38px);
       content: "";
     }
@@ -186,7 +182,7 @@
       border: 1px solid rgba(255, 255, 255, .7);
       border-radius: 20px;
       background: rgba(255, 255, 255, .92);
-      box-shadow: 0 16px 42px rgba(20, 45, 78, .16);
+      box-shadow: 0 16px 42px rgba(47, 117, 246, .14);
       backdrop-filter: blur(15px);
       font-size: 14px;
       font-weight: 750;
@@ -243,18 +239,24 @@
     .thought {
       margin-top: 36px;
       padding: 24px 26px;
-      border-left: 5px solid var(--gold);
+      border-left: 5px solid var(--warm);
       border-radius: 0 20px 20px 0;
-      background: var(--gold-soft);
-      color: #5a3b10;
+      background: var(--warm-soft);
+      color: var(--ink);
       font-size: 20px;
       font-weight: 720;
       line-height: 1.5;
     }
 
     .responsibility-head {
-      max-width: 760px;
-      margin-bottom: 54px;
+      max-width: 980px;
+      margin-bottom: 60px;
+    }
+
+    .responsibility-head .section-title {
+      max-width: 980px;
+      margin-bottom: 0;
+      font-size: clamp(50px, 6.4vw, 86px);
     }
 
     .responsibility-grid {
@@ -267,9 +269,10 @@
       min-height: 285px;
       padding: 30px;
       border: 1px solid var(--line);
+      border-top: 4px solid var(--sky);
       border-radius: 27px;
       background: var(--paper);
-      box-shadow: 0 12px 35px rgba(30, 57, 91, .06);
+      box-shadow: 0 12px 35px rgba(47, 117, 246, .07);
     }
 
     .card-number {
@@ -325,7 +328,7 @@
       border: 1px solid var(--line);
       border-radius: 29px;
       background: var(--paper);
-      box-shadow: 0 15px 40px rgba(28, 54, 90, .08);
+      box-shadow: 0 15px 40px rgba(47, 117, 246, .08);
     }
 
     .direction-card img {
@@ -351,16 +354,16 @@
     }
 
     .cta-link:focus-visible {
-      outline: 3px solid rgba(102, 136, 177, .38);
+      outline: 3px solid rgba(47, 117, 246, .35);
       outline-offset: 3px;
     }
 
     .time-section {
-      background: #263342;
-      color: #fff;
+      background: linear-gradient(135deg, #b9d8f5, #94c1e9);
+      color: var(--ink);
     }
 
-    .time-section .section-kicker { color: #b7c9de; }
+    .time-section .section-kicker { color: #2f68a6; }
 
     .time-layout {
       display: grid;
@@ -373,7 +376,7 @@
 
     .time-intro {
       margin-bottom: 0;
-      color: #aebaca;
+      color: rgba(18, 32, 51, .72);
       font-size: 20px;
       line-height: 1.58;
     }
@@ -387,15 +390,16 @@
     .time-card {
       min-height: 215px;
       padding: 26px;
-      border: 1px solid rgba(255, 255, 255, .10);
+      border: 1px solid rgba(255, 255, 255, .68);
       border-radius: 23px;
-      background: rgba(255, 255, 255, .07);
+      background: rgba(255, 255, 255, .64);
+      box-shadow: 0 12px 32px rgba(47, 104, 166, .08);
     }
 
     .time-card strong {
       display: block;
       margin-bottom: 18px;
-      color: var(--gold);
+      color: #2f68a6;
       font-size: 29px;
       letter-spacing: -.04em;
     }
@@ -403,7 +407,7 @@
     .time-card ul {
       margin: 0;
       padding-left: 20px;
-      color: #d7dee8;
+      color: rgba(18, 32, 51, .82);
       line-height: 1.48;
     }
 
@@ -422,11 +426,11 @@
       align-items: end;
       gap: 45px;
       border-radius: 38px;
-      color: #fff;
+      color: var(--ink);
       background:
-        radial-gradient(circle at 85% 0%, rgba(231, 202, 158, .25), transparent 18rem),
-        linear-gradient(135deg, #718eaf, #4e6d91);
-      box-shadow: 0 24px 65px rgba(63, 88, 120, .23);
+        radial-gradient(circle at 85% 0%, rgba(243, 179, 93, .30), transparent 18rem),
+        var(--sky);
+      box-shadow: 0 24px 65px rgba(47, 117, 246, .20);
     }
 
     .closing-card h2 {
@@ -440,7 +444,7 @@
     .closing-card p {
       max-width: 650px;
       margin-bottom: 0;
-      color: rgba(255, 255, 255, .79);
+      color: rgba(18, 32, 51, .72);
       font-size: 19px;
       line-height: 1.55;
     }
@@ -453,9 +457,9 @@
       justify-content: center;
       gap: 11px;
       border-radius: 17px;
-      color: var(--ink);
+      color: var(--blue);
       background: #fff;
-      box-shadow: 0 12px 30px rgba(2, 20, 57, .20);
+      box-shadow: 0 12px 30px rgba(47, 117, 246, .16);
       text-decoration: none;
       white-space: nowrap;
       font-weight: 850;
@@ -596,6 +600,11 @@
 
       .responsibility-head { margin-bottom: 34px; }
 
+      .responsibility-head .section-title {
+        font-size: clamp(34px, 9.8vw, 44px);
+        overflow-wrap: break-word;
+      }
+
       .responsibility-card {
         padding: 22px;
         grid-template-columns: 42px 1fr;
@@ -697,9 +706,9 @@
   <a class="skip-link" href="#main">Перейти к содержанию</a>
 
   <header class="site-header">
-    <a class="brand" href="#main" aria-label="Ассоциация добрых дел — начало страницы">
+    <a class="brand" href="#main" aria-label="Ассоциация Добрых Дел — начало страницы">
       <img src="../assets/mission-1.jpg" alt="" width="48" height="48">
-      <span>Ассоциация добрых дел</span>
+      <span>Ассоциация Добрых Дел</span>
     </a>
   </header>
 
@@ -721,12 +730,12 @@
       <div class="section-inner intro-grid">
         <div>
           <p class="section-kicker">В чём смысл</p>
-          <h2 class="section-title" id="meaning-title">Сделать добро регулярным, а не редким</h2>
+          <h2 class="section-title" id="meaning-title">Вместе добрых дел становится больше</h2>
         </div>
         <div class="section-copy">
-          <p>Мы собираем людей, которым важно не только говорить о добре, но и превращать намерение в реальное действие.</p>
-          <p>Каждая история становится частью общего результата: мы видим сделанное, делимся идеями и поддерживаем друг друга.</p>
-          <div class="thought">Главная мысль: маленькое действие сегодня важнее большой идеи, отложенной на потом.</div>
+          <p>Каждый из нас раз в месяц выбирает одно посильное доброе дело — для людей, животных или природы.</p>
+          <p>Мы рассказываем о сделанном в Telegram, поддерживаем друг друга и находим новые идеи.</p>
+          <div class="thought">Один человек — одно дело. Вместе — много реальной помощи.</div>
         </div>
       </div>
     </section>
@@ -734,9 +743,8 @@
     <section class="section" aria-labelledby="responsibility-title">
       <div class="section-inner">
         <div class="responsibility-head">
-          <p class="section-kicker">Ответственность участника</p>
-          <h2 class="section-title" id="responsibility-title">Три простых действия</h2>
-          <p class="section-copy">Так мы видим общий результат и поддерживаем друг друга.</p>
+          <p class="section-kicker">Три простых действия</p>
+          <h2 class="section-title" id="responsibility-title">Ответственность участника</h2>
         </div>
 
         <div class="responsibility-grid">
@@ -811,9 +819,9 @@
           <article class="time-card">
             <strong>5 минут</strong>
             <ul>
-              <li>позвонить человеку, которому сейчас одиноко;</li>
+              <li>позвонить человеку, которому будет приятно вас услышать;</li>
               <li>помочь соседу донести сумки или коляску;</li>
-              <li>налить свежую воду в уличную поилку для животных.</li>
+              <li>налить свежую воду в уличную поилку.</li>
             </ul>
           </article>
 
@@ -822,25 +830,25 @@
             <ul>
               <li>помочь с одной задачей в телефоне или компьютере;</li>
               <li>отнести чистую вещь в благотворительный контейнер или книгу в библиотеку;</li>
-              <li>разделить бумагу, пластик и стекло и выбросить их в нужные контейнеры.</li>
+              <li>разложить бумагу, пластик и стекло по контейнерам.</li>
             </ul>
           </article>
 
           <article class="time-card">
             <strong>30 минут</strong>
             <ul>
-              <li>научить ребёнка чему-то полезному;</li>
-              <li>помочь знакомому покормить питомца или погулять с ним;</li>
-              <li>убрать мусор в своём дворе или ближайшем парке.</li>
+              <li>почитать с ребёнком и обсудить одну главу;</li>
+              <li>погулять с собакой знакомого, которому нужна помощь;</li>
+              <li>убрать мусор у дома или в ближайшем парке.</li>
             </ul>
           </article>
 
           <article class="time-card">
             <strong>1 час</strong>
             <ul>
-              <li>сходить за продуктами или лекарствами для пожилого или заболевшего человека;</li>
-              <li>вместе с волонтёром погулять с собакой из приюта;</li>
-              <li>собрать хорошие вещи и отнести их в пункт помощи.</li>
+              <li>помочь пожилому или заболевшему человеку с домашними делами;</li>
+              <li>провести время с человеком, которому нужна компания;</li>
+              <li>вместе с другом привести в порядок небольшой участок двора.</li>
             </ul>
           </article>
         </div>
@@ -858,7 +866,7 @@
     </section>
   </main>
 
-  <footer>Ассоциация добрых дел</footer>
+  <footer>Ассоциация Добрых Дел</footer>
 
 </body>
 </html>

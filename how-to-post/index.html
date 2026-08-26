@@ -4,22 +4,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Два простых способа рассказать о добром деле в канале Ассоциации добрых дел.">
-  <meta name="theme-color" content="#f7f9fc">
-  <title>Ассоциация добрых дел — как рассказать о деле</title>
+  <meta name="theme-color" content="#f4f8fb">
+  <title>Ассоциация Добрых Дел — как рассказать о деле</title>
   <style>
     :root {
-      --ink:#1d2a37;
-      --muted:#71808f;
-      --paper:#f3f6f8;
+      --ink:#263746;
+      --muted:#718496;
+      --paper:#f4f8fb;
       --white:#fff;
-      --blue:#729fc7;
-      --blue-2:#a6c7df;
-      --blue-pale:#edf4f8;
-      --orange:#d5ae76;
-      --orange-pale:#f8f2e8;
-      --green:#5d8e77;
-      --line:#dce5eb;
-      --shadow:0 24px 70px rgba(55,78,99,.09);
+      --blue:#76a8d6;
+      --blue-2:#b7d4ee;
+      --blue-pale:#edf6fd;
+      --green:#6e96b5;
+      --line:#dbe8f1;
+      --shadow:0 24px 70px rgba(72,112,147,.09);
       --radius:30px;
     }
 
@@ -106,7 +104,7 @@
       filter:blur(2px);
     }
     .hero::before { width:520px; height:520px; right:-190px; top:-270px; background:rgba(166,199,223,.2); }
-    .hero::after { width:300px; height:300px; left:-150px; bottom:-180px; background:rgba(213,174,118,.12); }
+    .hero::after { width:300px; height:300px; left:-150px; bottom:-180px; background:rgba(183,212,238,.16); }
     .hero-grid { display:grid; grid-template-columns:minmax(0,1.07fr) minmax(390px,.78fr); gap:72px; align-items:center; }
     .hero-copy { min-width:0; }
     .hero-card {
@@ -126,7 +124,7 @@
       padding:32px;
       overflow:hidden;
       border-radius:28px;
-      background:linear-gradient(145deg,#e3eef4 0%,#f8fafb 58%,#f6f1e9 100%);
+      background:linear-gradient(145deg,#e3eff8 0%,#f8fbfd 58%,#edf6fd 100%);
     }
     .hero-lockup { display:flex; align-items:center; gap:12px; font-weight:850; }
     .hero-lockup img { width:52px; height:52px; border-radius:16px; object-fit:cover; }
@@ -158,16 +156,15 @@
       transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
     }
     .choice:hover { transform:translateY(-3px); border-color:#bfd2df; box-shadow:0 20px 48px rgba(55,78,99,.1); }
-    .choice-number { display:grid; width:38px; height:38px; place-items:center; margin-bottom:24px; border-radius:13px; background:var(--blue-pale); color:var(--blue); font-weight:900; }
-    .choice:nth-child(2) .choice-number { color:#9a5d05; background:var(--orange-pale); }
+    .choice-number { display:inline-flex; width:auto; min-height:30px; align-items:center; margin-bottom:22px; padding:5px 11px; border:1px solid #c9ddec; border-radius:999px; background:var(--blue-pale); color:#5d88ad; font-size:12px; font-weight:900; letter-spacing:.04em; text-transform:uppercase; }
     .choice strong { display:block; margin-bottom:7px; font-size:20px; line-height:1.17; }
     .choice span { display:block; color:var(--muted); font-size:14px; }
     .choice-arrow { position:absolute; top:24px; right:24px; color:var(--blue); font-size:22px; font-weight:800; }
 
     .section-head { display:grid; grid-template-columns:minmax(0,.85fr) minmax(320px,.62fr); gap:60px; align-items:end; margin-bottom:48px; }
     .section-head .lead { margin-bottom:0; font-size:20px; }
-    .method-one { border-top:8px solid #a8c5d8; background:#fff; }
-    .method-tag { display:inline-flex; align-items:center; gap:8px; margin-bottom:20px; padding:11px 17px; border:2px solid #bad0df; border-radius:999px; background:#eaf2f6; color:#486f8e; box-shadow:0 8px 24px rgba(67,92,112,.08); font-size:15px; font-weight:950; letter-spacing:.055em; text-transform:uppercase; }
+    .method-one { border-top:8px solid #abcbe4; background:#fff; }
+    .method-tag { display:inline-flex; align-items:center; gap:8px; margin-bottom:20px; padding:11px 17px; border:2px solid #bfd7e9; border-radius:999px; background:#eef7fd; color:#527d9f; box-shadow:0 8px 24px rgba(72,112,147,.07); font-size:15px; font-weight:950; letter-spacing:.055em; text-transform:uppercase; }
 
     .method-layout { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(310px,.58fr); gap:30px; align-items:stretch; }
     .instruction-card {
@@ -211,10 +208,10 @@
     .tg-pin-copy strong,.tg-pin-copy span { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .tg-pin-copy strong { color:var(--blue); font-size:11px; }
     .tg-pin-copy span { font-size:12px; }
-    .tg-feed { min-height:510px; padding:20px; background:linear-gradient(160deg,#f0f5f7,#e8f0f4); }
+    .tg-feed { min-height:420px; padding:20px; background:linear-gradient(160deg,#f0f6fa,#e7f1f8); }
     .tg-post { width:min(100%,380px); margin:0 auto; overflow:hidden; border-radius:18px 18px 18px 6px; background:#fff; box-shadow:0 10px 34px rgba(43,69,103,.12); }
-    .tg-post-image { display:grid; place-items:center; min-height:230px; padding:28px; background:#fff; }
-    .tg-post-image img { width:170px; height:170px; object-fit:cover; }
+    .tg-post-image { display:grid; place-items:center; min-height:180px; padding:24px; background:#fff; }
+    .tg-post-image img { width:140px; height:140px; object-fit:cover; }
     .tg-post-copy { padding:16px 18px; font-size:13px; }
     .tg-post-copy strong { display:block; margin-bottom:10px; line-height:1.25; }
     .tg-post-copy p { margin-bottom:10px; color:#465365; }
@@ -239,17 +236,19 @@
     .tg-action.highlight span { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
     .tg-gift { color:#96a2b0; font-size:22px; }
 
-    .photo-required-inline { display:flex; align-items:center; gap:12px; margin-top:22px; padding:15px 17px; border:1px solid #e4d5bd; border-radius:17px; background:var(--orange-pale); color:#705b3d; font-weight:900; }
-    .photo-required-inline span { display:grid; flex:0 0 auto; width:36px; height:36px; place-items:center; border-radius:11px; background:#fff; font-size:18px; }
+    .photo-required-inline { display:flex; align-items:center; gap:12px; margin-top:22px; padding:15px 17px; border:1px solid #cbdfea; border-radius:17px; background:#eef7fd; color:#527b99; font-weight:900; }
+    .photo-required-inline span { display:grid; flex:0 0 auto; width:36px; height:36px; place-items:center; border-radius:11px; background:#fff; }
+    .photo-required-inline svg { width:20px; height:20px; fill:none; stroke:#6c98b9; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.8; }
 
-    .method-two { border-top:8px solid #c8b99f; background:linear-gradient(180deg,#f5f7f8 0%,#edf3f6 100%); }
-    .method-two .method-tag { border-color:#d6c8b0; background:#f4eee5; color:#765f3d; }
+    .method-two { border-top:8px solid #8fb8da; background:linear-gradient(180deg,#f7fbfe 0%,#edf6fd 100%); }
+    .method-two .method-tag { border-color:#afcfe6; background:#e7f3fb; color:#4f7898; }
+    .method-two .section-head .lead { padding:16px 18px; border:1px solid #d2e4f1; border-radius:16px; background:#fff; color:#527b99; font-weight:850; }
     .steps-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:46px 22px; align-items:start; }
     .flow-step { min-width:0; }
     .full-channel-step { grid-column:1/-1; }
     .full-channel-step .tg-window { width:min(100%,760px); margin-inline:auto; }
     .flow-label { display:flex; gap:12px; align-items:flex-start; min-height:104px; margin-bottom:16px; }
-    .flow-number { display:grid; flex:0 0 auto; width:38px; height:38px; place-items:center; border-radius:13px; background:var(--ink); color:#fff; font-weight:900; }
+    .flow-number { display:grid; flex:0 0 auto; width:38px; height:38px; place-items:center; border-radius:13px; background:#719fc4; color:#fff; font-weight:900; }
     .flow-label p { margin:4px 0 0; color:var(--muted); font-size:14px; }
     .flow-label strong { display:block; font-size:17px; }
     .mini-window { border-radius:24px; }
@@ -261,7 +260,7 @@
     .composer { display:flex; align-items:center; gap:9px; min-height:58px; padding:9px 11px; border-radius:16px; background:#fff; }
     .composer-input { flex:1; min-width:0; color:#98a3b1; font-size:12px; }
     .money-action { position:relative; display:grid; flex:0 0 auto; width:48px; height:48px; place-items:center; border-radius:50%; background:#6f9fbe; color:#fff; font-size:23px; font-weight:850; box-shadow:0 0 0 8px rgba(114,159,199,.14); }
-    .money-label { position:absolute; right:0; bottom:61px; width:max-content; max-width:190px; padding:9px 12px; border-radius:11px; background:var(--ink); color:#fff; font-size:11px; font-weight:800; }
+    .money-label { position:absolute; right:0; bottom:61px; width:max-content; max-width:190px; padding:9px 12px; border:1px solid #cbdfea; border-radius:11px; background:#fff; color:#527b99; box-shadow:0 9px 25px rgba(72,112,147,.12); font-size:11px; font-weight:800; }
     .compose-view { min-height:410px; padding:16px; background:#f2f6f8; }
     .proposal-banner { margin-bottom:14px; padding:13px 14px; border:1px solid #d3e0e8; border-radius:15px; background:#fff; }
     .proposal-banner strong { display:block; color:var(--blue); font-size:12px; }
@@ -269,7 +268,8 @@
     .draft-card { padding:16px; border-radius:17px; background:#fff; box-shadow:0 10px 30px rgba(43,69,103,.08); }
     .draft-card p { margin-bottom:11px; font-size:12px; }
     .photo-chip { display:flex; align-items:center; gap:9px; margin:14px 0; padding:10px; border-radius:12px; background:#edf3f6; color:#5c7f99; font-size:11px; font-weight:800; }
-    .photo-thumb { display:grid; width:38px; height:38px; place-items:center; border-radius:9px; background:linear-gradient(145deg,#aec9dc,#d8c3a2); color:#fff; font-size:18px; }
+    .photo-thumb { display:grid; width:38px; height:38px; place-items:center; border-radius:9px; background:linear-gradient(145deg,#aecce3,#d9eaf6); color:#fff; }
+    .photo-thumb svg { width:21px; height:21px; fill:none; stroke:#fff; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.8; }
     .price-row { display:flex; align-items:center; justify-content:space-between; margin-top:14px; padding-top:12px; border-top:1px solid #edf0f4; font-size:11px; }
     .price-row strong { color:var(--green); }
     .send-button { width:100%; margin-top:14px; padding:11px; border:0; border-radius:12px; background:#729fbd; color:#fff; font-weight:850; }
@@ -282,26 +282,23 @@
       padding:25px;
       overflow-wrap:anywhere;
       border-radius:20px;
-      background:#101722;
-      color:#f0f4f9;
+      border:1px solid #d2e4f1;
+      background:#eff7fc;
+      color:#38556c;
       font:15px/1.75 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
       white-space:pre-wrap;
     }
-    .required { color:#ffca7c; font-weight:850; }
     .copy-row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
     .copy-button { min-height:50px; padding:0 20px; border:0; border-radius:999px; background:#739dbd; color:#fff; font-weight:850; cursor:pointer; }
     .copy-button:hover { background:#638ead; }
     .copy-status { color:var(--green); font-size:14px; font-weight:850; }
-    .photo-rule { display:flex; gap:16px; align-items:flex-start; margin-top:25px; padding:20px; border:1px solid #ffe2b9; border-radius:20px; background:var(--orange-pale); }
-    .photo-rule-icon { display:grid; flex:0 0 auto; width:42px; height:42px; place-items:center; border-radius:13px; background:#fff; font-size:21px; }
-    .photo-rule strong { display:block; margin-bottom:4px; }
-    .photo-rule p { margin:0; color:#735e40; font-size:14px; }
-
-    .final { padding:88px 0; color:#fff; background:linear-gradient(120deg,#719abb,#9abbd1); }
+    .final { padding:88px 0; color:var(--ink); background:linear-gradient(120deg,#a9cceb,#c4ddf3); }
     .final-inner { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:40px; align-items:center; }
     .final h2 { margin-bottom:16px; }
-    .final p { max-width:720px; margin:0; color:#e9f2ff; font-size:20px; }
-    .final-mark { display:grid; width:120px; height:120px; place-items:center; border:1px solid rgba(255,255,255,.35); border-radius:34px; background:rgba(255,255,255,.16); font-size:54px; transform:rotate(4deg); }
+    .final p { max-width:720px; margin:0; color:#49677f; font-size:20px; }
+    .final-mark { display:grid; width:120px; height:120px; place-items:center; overflow:hidden; border:1px solid rgba(255,255,255,.5); border-radius:34px; background:#fff; transform:rotate(4deg); }
+    .final-mark img { width:100%; height:100%; object-fit:cover; }
+
     .footer { padding:34px 0 42px; border-top:1px solid var(--line); background:#fff; color:var(--muted); font-size:14px; }
     .footer-inner { display:flex; justify-content:space-between; gap:24px; }
 
@@ -344,9 +341,12 @@
       .section-head { margin-bottom:32px; }
       .instruction-card,.template-card { padding:24px; border-radius:24px; }
       .tg-window { border-radius:22px; }
-      .tg-feed { min-height:430px; padding:14px; }
-      .tg-post-image { min-height:190px; }
-      .tg-post-image img { width:145px; height:145px; }
+      .tg-pin { display:none; }
+      .tg-feed { min-height:188px; padding:14px; display:grid; place-items:center; }
+      .tg-post { display:grid; grid-template-columns:92px minmax(0,1fr); align-items:center; }
+      .tg-post-image { min-height:0; padding:12px; }
+      .tg-post-image img { width:68px; height:68px; }
+      .tg-post-copy { padding:14px; }
       .tg-action.highlight { width:46px; justify-content:center; }
       .tg-tap-hint { font-size:11px; }
       .tg-gift { display:none; }
@@ -366,9 +366,9 @@
 <body>
   <header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="../mission/" aria-label="Ассоциация добрых дел — на страницу миссии">
+      <a class="brand" href="../mission/" aria-label="Ассоциация Добрых Дел — на страницу миссии">
         <span class="brand-mark"><img src="../assets/mission-1.jpg" alt=""></span>
-        <span>Ассоциация добрых дел</span>
+        <span>Ассоциация Добрых Дел</span>
       </a>
       <a class="back-link" href="../mission/">Наша миссия →</a>
     </div>
@@ -384,13 +384,13 @@
 
           <div class="choice-grid" aria-label="Два способа рассказать о добром деле">
             <a class="choice" href="#message-us">
-              <span class="choice-number">1</span>
+              <span class="choice-number">Вариант 1</span>
               <strong>Написать нам</strong>
               <span>Поможем оформить</span>
               <span class="choice-arrow" aria-hidden="true">↓</span>
             </a>
             <a class="choice" href="#propose-post">
-              <span class="choice-number">2</span>
+              <span class="choice-number">Вариант 2</span>
               <strong>Предложить пост</strong>
               <span>Если текст и фото готовы</span>
               <span class="choice-arrow" aria-hidden="true">↓</span>
@@ -400,8 +400,8 @@
 
         <aside class="hero-card" aria-label="Короткое сообщение Ассоциации добрых дел">
           <div class="hero-card-inner">
-            <div class="hero-lockup"><img src="../assets/mission-1.jpg" alt=""><span>Ассоциация добрых дел</span></div>
-            <div class="hero-bubble">Сделали доброе дело? Расскажите 💙<span>Выберите один из двух способов.</span></div>
+            <div class="hero-lockup"><img src="../assets/mission-1.jpg" alt=""><span>Ассоциация Добрых Дел</span></div>
+            <div class="hero-bubble">Сделали доброе дело? Расскажите.<span>Выберите один из двух способов.</span></div>
           </div>
         </aside>
       </div>
@@ -425,21 +425,19 @@
             </div>
             <div class="tg-head">
               <span class="tg-avatar"><img src="../assets/mission-1.jpg" alt=""></span>
-              <span class="tg-title"><strong>Ассоциация Добрых Дел</strong><span>канал друзей</span></span>
+              <span class="tg-title"><strong>Ассоциация Добрых Дел</strong><span>Telegram-канал</span></span>
               <span class="tg-more" aria-hidden="true">•••</span>
             </div>
             <div class="tg-pin">
               <span class="tg-pin-line" aria-hidden="true"></span>
-              <span class="tg-pin-copy"><strong>Закреплённое сообщение</strong><span>💙 Наша миссия и как рассказать о добром деле</span></span>
+              <span class="tg-pin-copy"><strong>Главный закреп</strong><span>Наша миссия · Как рассказать о деле</span></span>
             </div>
             <div class="tg-feed">
               <article class="tg-post">
-                <div class="tg-post-image"><img src="../assets/mission-1.jpg" alt="Логотип Ассоциации добрых дел"></div>
+                <div class="tg-post-image"><img src="../assets/mission-1.jpg" alt="Логотип Ассоциации Добрых Дел"></div>
                 <div class="tg-post-copy">
-                  <strong>💙 НАША МИССИЯ И КАК РАССКАЗАТЬ О ДОБРОМ ДЕЛЕ</strong>
-                  <p>Наша цель — люди, которые делают добрые дела.</p>
-                  <p>Каждый участник совершает минимум одно доброе дело в месяц — для людей, животных или природы.</p>
-                  <div class="tg-post-links" aria-hidden="true"><span>💙 НАША МИССИЯ</span><span>📌 КАК РАССКАЗАТЬ О ДЕЛЕ?</span></div>
+                  <strong>Наша миссия</strong>
+                  <p>Люди, которые делают добрые дела.</p>
                 </div>
               </article>
             </div>
@@ -451,7 +449,6 @@
                   <span>Сообщения</span>
                 </div>
               </div>
-              <span class="tg-gift" aria-hidden="true">◫</span>
             </div>
           </div>
 
@@ -459,7 +456,7 @@
             <div>
               <h3>Расскажите, что сделали</h3>
               <p>Коротко опишите дело и приложите фотографию.</p>
-              <div class="photo-required-inline"><span aria-hidden="true">📷</span>Фото обязательно</div>
+              <div class="photo-required-inline"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7.5h4l1.4-2h5.2l1.4 2h4v11H4z"/><circle cx="12" cy="13" r="3.2"/></svg></span>Фото обязательно</div>
             </div>
             <div class="message-example"><strong>Например:</strong>«Сегодня отвёз корм в приют. Есть фото — помогите, пожалуйста, оформить пост».</div>
           </aside>
@@ -487,21 +484,19 @@
               </div>
               <div class="tg-head">
                 <span class="tg-avatar"><img src="../assets/mission-1.jpg" alt=""></span>
-                <span class="tg-title"><strong>Ассоциация Добрых Дел</strong><span>канал друзей</span></span>
+                <span class="tg-title"><strong>Ассоциация Добрых Дел</strong><span>Telegram-канал</span></span>
                 <span class="tg-more" aria-hidden="true">•••</span>
               </div>
               <div class="tg-pin">
                 <span class="tg-pin-line" aria-hidden="true"></span>
-                <span class="tg-pin-copy"><strong>Закреплённое сообщение</strong><span>💙 Наша миссия и как рассказать о добром деле</span></span>
+                <span class="tg-pin-copy"><strong>Главный закреп</strong><span>Наша миссия · Как рассказать о деле</span></span>
               </div>
               <div class="tg-feed">
                 <article class="tg-post">
-                  <div class="tg-post-image"><img src="../assets/mission-1.jpg" alt="Логотип Ассоциации добрых дел"></div>
+                  <div class="tg-post-image"><img src="../assets/mission-1.jpg" alt="Логотип Ассоциации Добрых Дел"></div>
                   <div class="tg-post-copy">
-                    <strong>💙 НАША МИССИЯ И КАК РАССКАЗАТЬ О ДОБРОМ ДЕЛЕ</strong>
-                    <p>Наша цель — люди, которые делают добрые дела.</p>
-                    <p>Каждый участник совершает минимум одно доброе дело в месяц — для людей, животных или природы.</p>
-                    <div class="tg-post-links" aria-hidden="true"><span>💙 НАША МИССИЯ</span><span>📌 КАК РАССКАЗАТЬ О ДЕЛЕ?</span></div>
+                    <strong>Наша миссия</strong>
+                    <p>Люди, которые делают добрые дела.</p>
                   </div>
                 </article>
               </div>
@@ -513,7 +508,6 @@
                     <span>Сообщения</span>
                   </div>
                 </div>
-                <span class="tg-gift" aria-hidden="true">◫</span>
               </div>
             </div>
           </article>
@@ -531,7 +525,7 @@
               </div>
               <div class="message-view">
                 <div class="system-card">Здесь можно написать нам или предложить пост.</div>
-                <div class="bubble-out">Хочу рассказать о добром деле 💙</div>
+                <div class="bubble-out">Хочу рассказать о добром деле</div>
                 <div class="composer">
                   <span aria-hidden="true">＋</span>
                   <span class="composer-input">Сообщение…</span>
@@ -555,7 +549,7 @@
                   <p><strong>Доброе дело от участника</strong></p>
                   <p><strong>Что сделали:</strong> привезли корм в приют.</p>
                   <p><strong>Как это прошло:</strong> познакомились с волонтёрами и помогли на прогулке.</p>
-                  <div class="photo-chip"><span class="photo-thumb" aria-hidden="true">▧</span><span>Фото_доброго_дела.jpg<br>прикреплено</span></div>
+                  <div class="photo-chip"><span class="photo-thumb" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m5.5 17 4-4 3 3 2-2 4 3"/></svg></span><span>Фото_доброго_дела.jpg<br>прикреплено</span></div>
                   <div class="price-row"><span>Цена</span><strong>Бесплатно</strong></div>
                   <button class="send-button" type="button" tabindex="-1">Предложить пост</button>
                 </div>
@@ -572,10 +566,6 @@
           <p class="eyebrow">Готовый шаблон</p>
           <h2>Скопируйте и заполните</h2>
           <p class="lead">Пишите коротко и своими словами.</p>
-          <div class="photo-rule">
-            <span class="photo-rule-icon" aria-hidden="true">📷</span>
-            <div><strong>Фотография обязательна</strong><p>Добавьте хотя бы одно фото дела или результата.</p></div>
-          </div>
         </div>
 
         <div class="template-card">
@@ -587,7 +577,7 @@
 
 Как это прошло: …
 
-<span class="required">Фото: обязательно</span></div>
+Фото:</div>
           <div class="copy-row">
             <button class="copy-button" id="copy-template" type="button">Скопировать шаблон</button>
             <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
@@ -598,20 +588,20 @@
 
     <section class="final">
       <div class="wrap final-inner">
-        <div><p class="eyebrow" style="color:#fff">Вот и всё</p><h2>Главное — рассказать.</h2><p>Так другие увидят результат, поддержат вас и, возможно, тоже захотят сделать доброе дело.</p></div>
-        <div class="final-mark" aria-hidden="true">💙</div>
+        <div><p class="eyebrow" style="color:#527d9f">Вот и всё</p><h2>Главное — рассказать.</h2><p>Так другие увидят результат, поддержат вас и, возможно, тоже захотят сделать доброе дело.</p></div>
+        <div class="final-mark" aria-hidden="true"><img src="../assets/mission-1.jpg" alt=""></div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="wrap footer-inner"><strong>Ассоциация добрых дел</strong><a href="../mission/">← Вернуться к нашей миссии</a></div>
+    <div class="wrap footer-inner"><strong>Ассоциация Добрых Дел</strong><a href="../mission/">← Вернуться к нашей миссии</a></div>
   </footer>
 
   <script>
     const copyButton = document.getElementById('copy-template');
     const copyStatus = document.getElementById('copy-status');
-    const template = `Доброе дело от [Имя]\n\nЧто сделали: …\n\nКак это прошло: …\n\nФото: обязательно`;
+    const template = `Доброе дело от [Имя]\n\nЧто сделали: …\n\nКак это прошло: …\n\nФото:`;
 
     copyButton.addEventListener('click', async () => {
       try {
