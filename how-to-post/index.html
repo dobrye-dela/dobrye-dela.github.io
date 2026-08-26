@@ -8,18 +8,18 @@
   <title>Ассоциация добрых дел — как рассказать о деле</title>
   <style>
     :root {
-      --ink:#101722;
-      --muted:#667284;
-      --paper:#f7f9fc;
+      --ink:#1d2a37;
+      --muted:#71808f;
+      --paper:#f3f6f8;
       --white:#fff;
-      --blue:#347cf6;
-      --blue-2:#79adfb;
-      --blue-pale:#eaf3ff;
-      --orange:#ffbc61;
-      --orange-pale:#fff3df;
-      --green:#2f9c6a;
-      --line:#dfe6ef;
-      --shadow:0 26px 80px rgba(35,64,105,.12);
+      --blue:#729fc7;
+      --blue-2:#a6c7df;
+      --blue-pale:#edf4f8;
+      --orange:#d5ae76;
+      --orange-pale:#f8f2e8;
+      --green:#5d8e77;
+      --line:#dce5eb;
+      --shadow:0 24px 70px rgba(55,78,99,.09);
       --radius:30px;
     }
 
@@ -37,7 +37,7 @@
     img { display:block; max-width:100%; }
     a { color:inherit; }
     button { font:inherit; }
-    :focus-visible { outline:3px solid rgba(52,124,246,.42); outline-offset:4px; }
+    :focus-visible { outline:3px solid rgba(114,159,199,.5); outline-offset:4px; }
     .wrap { width:min(1160px, calc(100% - 40px)); margin-inline:auto; }
     .section { padding:96px 0; }
     .eyebrow {
@@ -71,7 +71,7 @@
       top:0;
       z-index:50;
       border-bottom:1px solid rgba(223,230,239,.82);
-      background:rgba(247,249,252,.9);
+      background:rgba(243,246,248,.92);
       backdrop-filter:blur(18px);
       -webkit-backdrop-filter:blur(18px);
     }
@@ -96,7 +96,7 @@
       isolation:isolate;
       overflow:hidden;
       padding:100px 0 88px;
-      background:linear-gradient(180deg,#fff 0%,#f5f8ff 100%);
+      background:linear-gradient(180deg,#fff 0%,#f1f5f7 100%);
     }
     .hero::before,.hero::after {
       position:absolute;
@@ -105,8 +105,8 @@
       content:"";
       filter:blur(2px);
     }
-    .hero::before { width:520px; height:520px; right:-190px; top:-270px; background:rgba(121,173,251,.18); }
-    .hero::after { width:300px; height:300px; left:-150px; bottom:-180px; background:rgba(255,188,97,.16); }
+    .hero::before { width:520px; height:520px; right:-190px; top:-270px; background:rgba(166,199,223,.2); }
+    .hero::after { width:300px; height:300px; left:-150px; bottom:-180px; background:rgba(213,174,118,.12); }
     .hero-grid { display:grid; grid-template-columns:minmax(0,1.07fr) minmax(390px,.78fr); gap:72px; align-items:center; }
     .hero-copy { min-width:0; }
     .hero-card {
@@ -126,7 +126,7 @@
       padding:32px;
       overflow:hidden;
       border-radius:28px;
-      background:linear-gradient(145deg,#dcebff 0%,#f8fbff 58%,#fff2dd 100%);
+      background:linear-gradient(145deg,#e3eef4 0%,#f8fafb 58%,#f6f1e9 100%);
     }
     .hero-lockup { display:flex; align-items:center; gap:12px; font-weight:850; }
     .hero-lockup img { width:52px; height:52px; border-radius:16px; object-fit:cover; }
@@ -157,7 +157,7 @@
       box-shadow:0 14px 42px rgba(35,64,105,.06);
       transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
     }
-    .choice:hover { transform:translateY(-3px); border-color:#bad3fb; box-shadow:0 20px 48px rgba(35,64,105,.11); }
+    .choice:hover { transform:translateY(-3px); border-color:#bfd2df; box-shadow:0 20px 48px rgba(55,78,99,.1); }
     .choice-number { display:grid; width:38px; height:38px; place-items:center; margin-bottom:24px; border-radius:13px; background:var(--blue-pale); color:var(--blue); font-weight:900; }
     .choice:nth-child(2) .choice-number { color:#9a5d05; background:var(--orange-pale); }
     .choice strong { display:block; margin-bottom:7px; font-size:20px; line-height:1.17; }
@@ -166,8 +166,8 @@
 
     .section-head { display:grid; grid-template-columns:minmax(0,.85fr) minmax(320px,.62fr); gap:60px; align-items:end; margin-bottom:48px; }
     .section-head .lead { margin-bottom:0; font-size:20px; }
-    .method-one { background:#fff; }
-    .method-tag { display:inline-flex; align-items:center; gap:8px; margin-bottom:18px; padding:8px 12px; border-radius:999px; background:var(--blue-pale); color:var(--blue); font-size:13px; font-weight:850; }
+    .method-one { border-top:8px solid #a8c5d8; background:#fff; }
+    .method-tag { display:inline-flex; align-items:center; gap:8px; margin-bottom:20px; padding:11px 17px; border:2px solid #bad0df; border-radius:999px; background:#eaf2f6; color:#486f8e; box-shadow:0 8px 24px rgba(67,92,112,.08); font-size:15px; font-weight:950; letter-spacing:.055em; text-transform:uppercase; }
 
     .method-layout { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(310px,.58fr); gap:30px; align-items:stretch; }
     .instruction-card {
@@ -177,8 +177,8 @@
       min-width:0;
       padding:34px;
       border-radius:30px;
-      background:linear-gradient(145deg,#edf5ff 0%,#f9fbff 100%);
-      border:1px solid #d8e8ff;
+      background:linear-gradient(145deg,#edf3f6 0%,#f9fbfc 100%);
+      border:1px solid #d8e4eb;
     }
     .instruction-card p { color:var(--muted); font-size:18px; }
     .message-example { margin-top:38px; padding:20px 22px; border-radius:20px 20px 20px 7px; background:#fff; box-shadow:0 14px 42px rgba(35,64,105,.09); }
@@ -192,10 +192,10 @@
       background:#edf4fb;
       box-shadow:var(--shadow);
     }
-    .tg-appbar { display:flex; align-items:center; gap:9px; min-height:42px; padding:7px 14px; color:#fff; background:#2498df; }
+    .tg-appbar { display:flex; align-items:center; gap:9px; min-height:42px; padding:7px 14px; color:#fff; background:#75a8ca; }
     .tg-appbar strong { font-size:13px; letter-spacing:.01em; }
     .tg-appbar span:last-child { margin-left:auto; color:rgba(255,255,255,.78); font-size:11px; font-weight:750; }
-    .tg-plane { display:grid; width:27px; height:27px; place-items:center; border-radius:50%; background:#fff; color:#2498df; }
+    .tg-plane { display:grid; width:27px; height:27px; place-items:center; border-radius:50%; background:#fff; color:#75a8ca; }
     .tg-plane svg { width:17px; height:17px; fill:currentColor; }
     .tg-head { display:flex; align-items:center; gap:12px; min-height:68px; padding:11px 18px; border-bottom:1px solid #e2e8f0; background:#fff; }
     .tg-avatar { flex:0 0 auto; width:42px; height:42px; overflow:hidden; border-radius:50%; background:#fff; }
@@ -211,7 +211,7 @@
     .tg-pin-copy strong,.tg-pin-copy span { display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .tg-pin-copy strong { color:var(--blue); font-size:11px; }
     .tg-pin-copy span { font-size:12px; }
-    .tg-feed { min-height:510px; padding:20px; background:linear-gradient(160deg,#eff6fc,#e7f0f8); }
+    .tg-feed { min-height:510px; padding:20px; background:linear-gradient(160deg,#f0f5f7,#e8f0f4); }
     .tg-post { width:min(100%,380px); margin:0 auto; overflow:hidden; border-radius:18px 18px 18px 6px; background:#fff; box-shadow:0 10px 34px rgba(43,69,103,.12); }
     .tg-post-image { display:grid; place-items:center; min-height:230px; padding:28px; background:#fff; }
     .tg-post-image img { width:170px; height:170px; object-fit:cover; }
@@ -219,29 +219,31 @@
     .tg-post-copy strong { display:block; margin-bottom:10px; line-height:1.25; }
     .tg-post-copy p { margin-bottom:10px; color:#465365; }
     .tg-post-links { display:grid; gap:8px; margin-top:14px; }
-    .tg-post-links span { display:block; padding:9px 10px; border-radius:10px; background:#edf5ff; color:var(--blue); text-align:center; font-size:11px; font-weight:850; }
-    .tg-bottom { display:flex; align-items:flex-end; justify-content:space-between; min-height:104px; padding:11px 14px 13px; border-top:1px solid #e0e7ef; background:#fff; }
+    .tg-post-links span { display:block; padding:9px 10px; border-radius:10px; background:#edf3f6; color:#5c84a4; text-align:center; font-size:11px; font-weight:850; }
+    .tg-bottom { display:flex; align-items:flex-end; justify-content:space-between; min-height:86px; padding:10px 14px 12px; border-top:1px solid #e0e7ef; background:#fff; }
     .tg-action-group { display:flex; min-width:0; flex-direction:column; align-items:flex-start; gap:8px; }
-    .tg-tap-hint { color:var(--blue); font-size:12px; font-weight:900; letter-spacing:.02em; }
+    .tg-tap-hint { color:#557d9c; font-size:12px; font-weight:900; letter-spacing:.01em; }
     .tg-action { position:relative; display:flex; align-items:center; gap:9px; color:#5c6d80; font-size:13px; font-weight:800; }
     .tg-action svg { width:26px; height:26px; fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; stroke-width:1.9; }
-    .tg-action.highlight { min-height:48px; padding:10px 19px; border-radius:15px; background:var(--blue); color:#fff; box-shadow:0 10px 28px rgba(52,124,246,.3); font-size:16px; }
+    .tg-action.highlight { display:grid; width:46px; height:46px; min-height:0; place-items:center; padding:0; border:1px solid #c8d9e4; border-radius:50%; background:#f0f5f8; color:#5f8eaf; box-shadow:0 8px 24px rgba(71,104,129,.16); }
     .tg-action.highlight::before {
       position:absolute;
       inset:-6px;
-      border:2px solid rgba(52,124,246,.46);
-      border-radius:20px;
-      background:rgba(52,124,246,.08);
+      border:2px solid rgba(114,159,199,.48);
+      border-radius:50%;
+      background:rgba(166,199,223,.12);
       content:"";
       animation:pulse 2.1s ease-in-out infinite;
     }
     .tg-action > * { position:relative; z-index:1; }
+    .tg-action.highlight span { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
     .tg-gift { color:#96a2b0; font-size:22px; }
 
-    .photo-required-inline { display:flex; align-items:center; gap:12px; margin-top:22px; padding:15px 17px; border:1px solid #ffd79f; border-radius:17px; background:var(--orange-pale); color:#7c551c; font-weight:900; }
+    .photo-required-inline { display:flex; align-items:center; gap:12px; margin-top:22px; padding:15px 17px; border:1px solid #e4d5bd; border-radius:17px; background:var(--orange-pale); color:#705b3d; font-weight:900; }
     .photo-required-inline span { display:grid; flex:0 0 auto; width:36px; height:36px; place-items:center; border-radius:11px; background:#fff; font-size:18px; }
 
-    .method-two { background:linear-gradient(180deg,#f7f9fc 0%,#edf4ff 100%); }
+    .method-two { border-top:8px solid #c8b99f; background:linear-gradient(180deg,#f5f7f8 0%,#edf3f6 100%); }
+    .method-two .method-tag { border-color:#d6c8b0; background:#f4eee5; color:#765f3d; }
     .steps-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:46px 22px; align-items:start; }
     .flow-step { min-width:0; }
     .full-channel-step { grid-column:1/-1; }
@@ -253,24 +255,24 @@
     .mini-window { border-radius:24px; }
     .mini-window .tg-head { min-height:58px; padding:9px 14px; }
     .mini-window .tg-avatar { width:36px; height:36px; }
-    .message-view { display:flex; min-height:410px; flex-direction:column; justify-content:flex-end; padding:16px; background:linear-gradient(150deg,#edf5fc,#e4eef8); }
+    .message-view { display:flex; min-height:410px; flex-direction:column; justify-content:flex-end; padding:16px; background:linear-gradient(150deg,#eef4f7,#e5edf2); }
     .system-card { width:85%; margin:0 auto 18px; padding:15px; border-radius:16px; background:#fff; color:#536275; text-align:center; font-size:12px; box-shadow:0 10px 30px rgba(43,69,103,.09); }
-    .bubble-out { max-width:85%; margin:0 0 14px auto; padding:11px 13px; border-radius:16px 16px 5px 16px; background:#dcecff; font-size:12px; }
+    .bubble-out { max-width:85%; margin:0 0 14px auto; padding:11px 13px; border-radius:16px 16px 5px 16px; background:#dce9f1; font-size:12px; }
     .composer { display:flex; align-items:center; gap:9px; min-height:58px; padding:9px 11px; border-radius:16px; background:#fff; }
     .composer-input { flex:1; min-width:0; color:#98a3b1; font-size:12px; }
-    .money-action { position:relative; display:grid; flex:0 0 auto; width:48px; height:48px; place-items:center; border-radius:50%; background:var(--blue); color:#fff; font-size:23px; font-weight:850; box-shadow:0 0 0 8px rgba(52,124,246,.15); }
+    .money-action { position:relative; display:grid; flex:0 0 auto; width:48px; height:48px; place-items:center; border-radius:50%; background:#6f9fbe; color:#fff; font-size:23px; font-weight:850; box-shadow:0 0 0 8px rgba(114,159,199,.14); }
     .money-label { position:absolute; right:0; bottom:61px; width:max-content; max-width:190px; padding:9px 12px; border-radius:11px; background:var(--ink); color:#fff; font-size:11px; font-weight:800; }
-    .compose-view { min-height:410px; padding:16px; background:#f3f7fb; }
-    .proposal-banner { margin-bottom:14px; padding:13px 14px; border:1px solid #cfe1fb; border-radius:15px; background:#fff; }
+    .compose-view { min-height:410px; padding:16px; background:#f2f6f8; }
+    .proposal-banner { margin-bottom:14px; padding:13px 14px; border:1px solid #d3e0e8; border-radius:15px; background:#fff; }
     .proposal-banner strong { display:block; color:var(--blue); font-size:12px; }
     .proposal-banner span { color:#66788e; font-size:11px; }
     .draft-card { padding:16px; border-radius:17px; background:#fff; box-shadow:0 10px 30px rgba(43,69,103,.08); }
     .draft-card p { margin-bottom:11px; font-size:12px; }
-    .photo-chip { display:flex; align-items:center; gap:9px; margin:14px 0; padding:10px; border-radius:12px; background:#edf5ff; color:#356aaf; font-size:11px; font-weight:800; }
-    .photo-thumb { display:grid; width:38px; height:38px; place-items:center; border-radius:9px; background:linear-gradient(145deg,#9ec7ff,#ffcf8e); color:#fff; font-size:18px; }
+    .photo-chip { display:flex; align-items:center; gap:9px; margin:14px 0; padding:10px; border-radius:12px; background:#edf3f6; color:#5c7f99; font-size:11px; font-weight:800; }
+    .photo-thumb { display:grid; width:38px; height:38px; place-items:center; border-radius:9px; background:linear-gradient(145deg,#aec9dc,#d8c3a2); color:#fff; font-size:18px; }
     .price-row { display:flex; align-items:center; justify-content:space-between; margin-top:14px; padding-top:12px; border-top:1px solid #edf0f4; font-size:11px; }
     .price-row strong { color:var(--green); }
-    .send-button { width:100%; margin-top:14px; padding:11px; border:0; border-radius:12px; background:var(--blue); color:#fff; font-weight:850; }
+    .send-button { width:100%; margin-top:14px; padding:11px; border:0; border-radius:12px; background:#729fbd; color:#fff; font-weight:850; }
 
     .template-section { background:#fff; }
     .template-layout { display:grid; grid-template-columns:minmax(0,.75fr) minmax(420px,1fr); gap:70px; align-items:center; }
@@ -287,15 +289,15 @@
     }
     .required { color:#ffca7c; font-weight:850; }
     .copy-row { display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
-    .copy-button { min-height:50px; padding:0 20px; border:0; border-radius:999px; background:var(--blue); color:#fff; font-weight:850; cursor:pointer; }
-    .copy-button:hover { background:#236de8; }
+    .copy-button { min-height:50px; padding:0 20px; border:0; border-radius:999px; background:#739dbd; color:#fff; font-weight:850; cursor:pointer; }
+    .copy-button:hover { background:#638ead; }
     .copy-status { color:var(--green); font-size:14px; font-weight:850; }
     .photo-rule { display:flex; gap:16px; align-items:flex-start; margin-top:25px; padding:20px; border:1px solid #ffe2b9; border-radius:20px; background:var(--orange-pale); }
     .photo-rule-icon { display:grid; flex:0 0 auto; width:42px; height:42px; place-items:center; border-radius:13px; background:#fff; font-size:21px; }
     .photo-rule strong { display:block; margin-bottom:4px; }
     .photo-rule p { margin:0; color:#735e40; font-size:14px; }
 
-    .final { padding:88px 0; color:#fff; background:linear-gradient(120deg,#2f78f1,#64a2fb); }
+    .final { padding:88px 0; color:#fff; background:linear-gradient(120deg,#719abb,#9abbd1); }
     .final-inner { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:40px; align-items:center; }
     .final h2 { margin-bottom:16px; }
     .final p { max-width:720px; margin:0; color:#e9f2ff; font-size:20px; }
@@ -345,7 +347,7 @@
       .tg-feed { min-height:430px; padding:14px; }
       .tg-post-image { min-height:190px; }
       .tg-post-image img { width:145px; height:145px; }
-      .tg-action.highlight { width:min(100%,230px); justify-content:center; }
+      .tg-action.highlight { width:46px; justify-content:center; }
       .tg-tap-hint { font-size:11px; }
       .tg-gift { display:none; }
       .message-view,.compose-view { min-height:380px; }
@@ -378,19 +380,19 @@
         <div class="hero-copy">
           <p class="eyebrow">Как рассказать о деле</p>
           <h1>Выберите удобный способ</h1>
-          <p class="lead">Можно просто написать нам сообщение или сразу предложить готовый пост. Оба варианта правильные.</p>
+          <p class="lead">Можно написать нам или сразу предложить готовый пост.</p>
 
           <div class="choice-grid" aria-label="Два способа рассказать о добром деле">
             <a class="choice" href="#message-us">
               <span class="choice-number">1</span>
               <strong>Написать нам</strong>
-              <span>Если нужна помощь с текстом</span>
+              <span>Поможем оформить</span>
               <span class="choice-arrow" aria-hidden="true">↓</span>
             </a>
             <a class="choice" href="#propose-post">
               <span class="choice-number">2</span>
               <strong>Предложить пост</strong>
-              <span>Если текст и фото уже готовы</span>
+              <span>Если текст и фото готовы</span>
               <span class="choice-arrow" aria-hidden="true">↓</span>
             </a>
           </div>
@@ -399,7 +401,7 @@
         <aside class="hero-card" aria-label="Короткое сообщение Ассоциации добрых дел">
           <div class="hero-card-inner">
             <div class="hero-lockup"><img src="../assets/mission-1.jpg" alt=""><span>Ассоциация добрых дел</span></div>
-            <div class="hero-bubble">Сделали доброе дело? Расскажите нам 💙<span>Это займёт всего несколько минут.</span></div>
+            <div class="hero-bubble">Сделали доброе дело? Расскажите 💙<span>Выберите один из двух способов.</span></div>
           </div>
         </aside>
       </div>
@@ -409,10 +411,10 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <span class="method-tag">Вариант 1 · самый простой</span>
-            <h2>Просто напишите нам</h2>
+            <span class="method-tag">Вариант 1</span>
+            <h2>Написать нам</h2>
           </div>
-          <p class="lead">Нажмите значок сообщений в канале и просто напишите нам. Мы поможем собрать историю в пост.</p>
+          <p class="lead">Нажмите значок сообщений. Мы поможем оформить пост.</p>
         </div>
 
         <div class="method-layout">
@@ -443,7 +445,7 @@
             </div>
             <div class="tg-bottom">
               <div class="tg-action-group">
-                <span class="tg-tap-hint">НАЖМИТЕ СЮДА ↓</span>
+                <span class="tg-tap-hint">Нажмите значок ↓</span>
                 <div class="tg-action highlight">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.7 7.7 0 0 1-8 7.5 8.8 8.8 0 0 1-3.5-.7L4 20l1.3-4A7.2 7.2 0 0 1 4 11.5 7.7 7.7 0 0 1 12 4a7.7 7.7 0 0 1 8 7.5Z"/></svg>
                   <span>Сообщения</span>
@@ -455,9 +457,8 @@
 
           <aside class="instruction-card">
             <div>
-              <p class="eyebrow">Что написать</p>
-              <h3>Достаточно двух вещей</h3>
-              <p>Коротко расскажите, что вы сделали, и приложите фотографию. Остальное мы поможем оформить.</p>
+              <h3>Расскажите, что сделали</h3>
+              <p>Коротко опишите дело и приложите фотографию.</p>
               <div class="photo-required-inline"><span aria-hidden="true">📷</span>Фото обязательно</div>
             </div>
             <div class="message-example"><strong>Например:</strong>«Сегодня отвёз корм в приют. Есть фото — помогите, пожалуйста, оформить пост».</div>
@@ -470,15 +471,15 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <span class="method-tag">Вариант 2 · если всё готово</span>
+            <span class="method-tag">Вариант 2</span>
             <h2>Предложите готовый пост</h2>
           </div>
-          <p class="lead">Три коротких действия в Telegram. Цена всегда остаётся «Бесплатно».</p>
+          <p class="lead">Сообщения → $ → текст и фото.</p>
         </div>
 
         <div class="steps-grid">
           <article class="flow-step full-channel-step">
-            <div class="flow-label"><span class="flow-number">1</span><div><strong>Откройте сообщения</strong><p>Нажмите значок сообщений внизу канала.</p></div></div>
+            <div class="flow-label"><span class="flow-number">1</span><div><strong>Значок сообщений</strong><p>Нажмите его внизу канала.</p></div></div>
             <div class="tg-window" aria-label="Макет канала Telegram с главным закреплённым постом и выделенным значком сообщений">
               <div class="tg-appbar">
                 <span class="tg-plane" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.7 4.1 17.8 19c-.2 1.1-.8 1.4-1.7.9l-4.4-3.2-2.1 2c-.2.2-.4.4-.9.4l.3-4.5 8.2-7.4c.4-.3-.1-.5-.5-.2L6.6 13.4l-4.4-1.5c-1-.3-1-1 .2-1.4l17.2-6.6c.8-.3 1.5.2 1.1 1.2Z"/></svg></span>
@@ -506,7 +507,7 @@
               </div>
               <div class="tg-bottom">
                 <div class="tg-action-group">
-                  <span class="tg-tap-hint">НАЖМИТЕ СЮДА ↓</span>
+                  <span class="tg-tap-hint">Нажмите значок ↓</span>
                   <div class="tg-action highlight">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a7.7 7.7 0 0 1-8 7.5 8.8 8.8 0 0 1-3.5-.7L4 20l1.3-4A7.2 7.2 0 0 1 4 11.5 7.7 7.7 0 0 1 12 4a7.7 7.7 0 0 1 8 7.5Z"/></svg>
                     <span>Сообщения</span>
@@ -518,7 +519,7 @@
           </article>
 
           <article class="flow-step">
-            <div class="flow-label"><span class="flow-number">2</span><div><strong>Нажмите значок $</strong><p>Это кнопка «Предложить пост».</p></div></div>
+            <div class="flow-label"><span class="flow-number">2</span><div><strong>Значок $</strong><p>Выберите «Предложить пост».</p></div></div>
             <div class="tg-window mini-window" aria-label="Макет сообщений канала с выделенной кнопкой Предложить пост">
               <div class="tg-appbar">
                 <span class="tg-plane" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.7 4.1 17.8 19c-.2 1.1-.8 1.4-1.7.9l-4.4-3.2-2.1 2c-.2.2-.4.4-.9.4l.3-4.5 8.2-7.4c.4-.3-.1-.5-.5-.2L6.6 13.4l-4.4-1.5c-1-.3-1-1 .2-1.4l17.2-6.6c.8-.3 1.5.2 1.1 1.2Z"/></svg></span>
@@ -529,7 +530,7 @@
                 <span class="tg-title"><strong>Сообщения каналу</strong><span>Ассоциация Добрых Дел</span></span>
               </div>
               <div class="message-view">
-                <div class="system-card">Здесь можно написать Ассоциации или предложить готовый пост.</div>
+                <div class="system-card">Здесь можно написать нам или предложить пост.</div>
                 <div class="bubble-out">Хочу рассказать о добром деле 💙</div>
                 <div class="composer">
                   <span aria-hidden="true">＋</span>
@@ -541,7 +542,7 @@
           </article>
 
           <article class="flow-step">
-            <div class="flow-label"><span class="flow-number">3</span><div><strong>Добавьте текст и фото</strong><p>Цену не меняйте: «Бесплатно».</p></div></div>
+            <div class="flow-label"><span class="flow-number">3</span><div><strong>Текст и фото</strong><p>Цена — «Бесплатно».</p></div></div>
             <div class="tg-window mini-window" aria-label="Макет формы предложения готового поста">
               <div class="tg-appbar">
                 <span class="tg-plane" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.7 4.1 17.8 19c-.2 1.1-.8 1.4-1.7.9l-4.4-3.2-2.1 2c-.2.2-.4.4-.9.4l.3-4.5 8.2-7.4c.4-.3-.1-.5-.5-.2L6.6 13.4l-4.4-1.5c-1-.3-1-1 .2-1.4l17.2-6.6c.8-.3 1.5.2 1.1 1.2Z"/></svg></span>
@@ -570,10 +571,10 @@
         <div>
           <p class="eyebrow">Готовый шаблон</p>
           <h2>Скопируйте и заполните</h2>
-          <p class="lead">Пишите просто и своими словами. Длинный текст не нужен.</p>
+          <p class="lead">Пишите коротко и своими словами.</p>
           <div class="photo-rule">
             <span class="photo-rule-icon" aria-hidden="true">📷</span>
-            <div><strong>Фотография обязательна</strong><p>Добавьте хотя бы одно фото, которое показывает доброе дело или его результат.</p></div>
+            <div><strong>Фотография обязательна</strong><p>Добавьте хотя бы одно фото дела или результата.</p></div>
           </div>
         </div>
 
