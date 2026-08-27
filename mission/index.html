@@ -558,7 +558,7 @@
 
       .hero {
         padding: 30px 0 40px;
-        gap: 24px;
+        gap: 30px;
       }
 
       .eyebrow {
@@ -568,35 +568,35 @@
 
       h1 {
         margin-bottom: 16px;
-        font-size: clamp(36px, 10vw, 44px);
+        font-size: clamp(38px, 10.5vw, 46px);
         letter-spacing: -.06em;
         overflow-wrap: break-word;
       }
 
       .hero-lead {
-        font-size: 16.5px;
-        line-height: 1.45;
+        font-size: 17px;
+        line-height: 1.5;
       }
 
-      .hero-visual { width: min(280px, 82vw); }
+      .hero-visual { width: min(310px, 100%); }
 
       .hero-visual img { border-radius: 28px; }
 
       .hero-note { display: none; }
 
-      .section { padding: 42px 0; }
+      .section { padding: 50px 0; }
 
       .section-kicker { margin-bottom: 12px; }
 
       .section-title {
         margin-bottom: 16px;
-        font-size: clamp(30px, 8.5vw, 36px);
+        font-size: clamp(32px, 9vw, 38px);
         letter-spacing: -.052em;
       }
 
       .major-kicker { font-size: 15px; }
 
-      .intro-grid { gap: 8px; }
+      .intro-grid { gap: 14px; }
 
       .section-copy { font-size: 16px; line-height: 1.5; }
 
@@ -616,13 +616,13 @@
       }
 
       .responsibility-card {
-        padding: 18px;
+        padding: 20px;
         grid-template-columns: 32px 1fr;
         column-gap: 12px;
         border-radius: 20px;
       }
 
-      .responsibility-grid { gap: 11px; }
+      .responsibility-grid { gap: 14px; }
 
       .card-number {
         width: 32px;
@@ -645,7 +645,7 @@
       }
 
       .directions-head {
-        margin-bottom: 22px;
+        margin-bottom: 24px;
         display: block;
       }
 
@@ -654,40 +654,35 @@
         font-size: 16px;
       }
 
-      .direction-grid { gap: 12px; }
+      .direction-grid { gap: 20px; }
 
       .direction-card {
-        display: grid;
-        grid-template-columns: 64px minmax(0, 1fr);
-        gap: 12px 16px;
-        align-items: center;
-        padding: 18px;
-        border-radius: 22px;
+        display: block;
+        padding: 0;
+        border-radius: 24px;
       }
 
       .direction-card img {
-        width: 64px;
-        height: 64px;
-        aspect-ratio: 1;
-        grid-column: 1;
-        grid-row: 1;
-        border-radius: 16px;
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+        aspect-ratio: 3 / 2;
       }
 
-      .direction-content { display: contents; padding: 0; }
+      .direction-content { display: block; padding: 22px; }
 
-      .direction-card h3 { grid-column: 2; margin: 0; font-size: 23px; }
+      .direction-card h3 { margin: 0 0 10px; font-size: 25px; }
 
-      .direction-card p { grid-column: 1 / -1; min-height: 0; font-size: 16px; line-height: 1.5; }
+      .direction-card p { min-height: 0; font-size: 16px; line-height: 1.55; }
 
       .time-layout { gap: 24px; }
       .time-layout .section-title { margin-bottom: 14px; }
       .time-intro { font-size: 16px; line-height: 1.5; }
-      .time-grid { grid-template-columns: 1fr; gap: 12px; }
+      .time-grid { grid-template-columns: 1fr; gap: 14px; }
 
       .time-card {
         min-height: 0;
-        padding: 18px;
+        padding: 20px;
       }
 
       .time-card strong {
@@ -695,8 +690,8 @@
         font-size: 23px;
       }
 
-      .time-card ul { font-size: 16px; line-height: 1.45; }
-      .time-card li + li { margin-top: 6px; }
+      .time-card ul { font-size: 16px; line-height: 1.5; }
+      .time-card li + li { margin-top: 7px; }
 
       .closing { padding: 40px 0 44px; }
 
