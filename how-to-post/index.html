@@ -240,7 +240,6 @@
 
     .method-two { border-top:8px solid #8fb8da; background:linear-gradient(180deg,#f7fbfe 0%,#edf6fd 100%); }
     .method-two .method-tag { border-color:#afcfe6; background:#e7f3fb; color:#4f7898; }
-    .method-two .section-head .lead { padding:16px 18px; border:1px solid #d2e4f1; border-radius:16px; background:#fff; color:#527b99; font-weight:850; }
     .steps-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:46px 22px; align-items:start; }
     .flow-step { min-width:0; }
     .full-channel-step { grid-column:1/-1; }
@@ -320,39 +319,66 @@
 
     @media (max-width:680px) {
       .wrap { width:min(100% - 24px,1160px); }
-      .topbar-inner { min-height:62px; }
+      .topbar { position:relative; }
+      .topbar-inner { min-height:60px; }
       .brand-mark { width:38px; height:38px; border-radius:12px; }
       .brand span:last-child { max-width:210px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
       .back-link { display:none; }
-      .hero { padding:48px 0 44px; }
+      .hero { padding:34px 0 34px; }
       .hero-grid { display:block; }
-      h1 { font-size:clamp(46px,13vw,60px); }
-      h2 { font-size:clamp(38px,11vw,52px); }
-      .hero .lead { font-size:18px; }
-      .choice-grid { grid-template-columns:1fr; gap:11px; margin-top:28px; }
-      .choice { display:grid; grid-template-columns:auto minmax(0,1fr); align-items:center; gap:13px; padding:17px 18px; border-radius:18px; }
+      h1 { margin-bottom:18px; font-size:clamp(36px,10.5vw,46px); }
+      h2 { margin-bottom:16px; font-size:clamp(30px,8.7vw,38px); }
+      .lead,.hero .lead { font-size:16.5px; }
+      .choice-grid { grid-template-columns:1fr; gap:10px; margin-top:22px; }
+      .choice { display:grid; grid-template-columns:auto minmax(0,1fr); align-items:center; gap:12px; padding:14px 16px; border-radius:18px; }
       .choice .choice-number { margin:0; padding:5px 9px; font-size:10px; }
       .choice strong { margin:0; font-size:18px; }
       .choice > span:not(.choice-number) { display:none; }
       .hero-card { display:none; }
-      .section { padding:68px 0; }
-      .section-head { margin-bottom:32px; }
-      .instruction-card,.template-card { padding:24px; border-radius:24px; }
+      .section { padding:42px 0; }
+      .section-head { margin-bottom:24px; }
+      .section-head .lead { font-size:17px; }
+      .method-tag { margin-bottom:14px; padding:8px 12px; border-width:1px; box-shadow:none; font-size:12px; }
+      .method-one,.method-two { border-top-width:4px; }
+      .method-layout { gap:18px; }
+      .instruction-card,.template-card { padding:20px; border-radius:22px; }
+      .instruction-card h3,.template-card h3 { font-size:22px; }
+      .instruction-card p { margin-bottom:0; font-size:16px; }
+      .message-example { margin-top:20px; padding:16px; font-size:15px; }
+      .photo-required-inline { margin-top:16px; padding:12px 14px; }
+      .photo-required-inline span { width:30px; height:30px; }
       .tg-window { border-radius:22px; }
+      .tg-appbar { min-height:34px; padding:5px 12px; }
+      .tg-plane { width:24px; height:24px; }
+      .tg-head { min-height:58px; gap:10px; padding:9px 13px; }
+      .tg-avatar { width:34px; height:34px; }
       .tg-pin { display:none; }
-      .tg-feed { min-height:188px; padding:14px; display:grid; place-items:center; }
-      .tg-post { display:grid; grid-template-columns:92px minmax(0,1fr); align-items:center; }
-      .tg-post-image { min-height:0; padding:12px; }
-      .tg-post-image img { width:68px; height:68px; }
-      .tg-post-copy { padding:14px; }
+      .tg-feed { min-height:126px; padding:12px; display:grid; place-items:center; }
+      .tg-post { display:grid; grid-template-columns:68px minmax(0,1fr); align-items:center; }
+      .tg-post-image { min-height:0; padding:10px; }
+      .tg-post-image img { width:48px; height:48px; }
+      .tg-post-copy { padding:12px; }
+      .tg-post-copy strong { margin-bottom:6px; }
+      .tg-post-copy p { margin-bottom:0; }
+      .tg-bottom { min-height:82px; padding:9px 14px 12px; }
+      .tg-action-group { gap:6px; }
       .tg-action.highlight { width:46px; justify-content:center; }
       .tg-tap-hint { font-size:11px; }
       .tg-gift { display:none; }
-      .message-view,.compose-view { min-height:380px; }
-      .template-code { padding:20px; font-size:13px; }
+      .steps-grid { gap:30px; }
+      .flow-label { gap:10px; margin-bottom:14px; }
+      .flow-number { width:32px; height:32px; border-radius:10px; }
+      .flow-label strong { font-size:16px; }
+      .message-view { min-height:240px; padding:14px; }
+      .compose-view { min-height:0; padding:12px; }
+      .template-layout { gap:22px; }
+      .template-code { margin:16px 0; padding:18px; font-size:14px; line-height:1.65; }
+      .final { padding:42px 0; }
       .final-inner { grid-template-columns:1fr; }
+      .final p { font-size:16px; }
       .final-mark { display:none; }
-      .footer-inner { flex-direction:column; }
+      .footer { padding:24px 0 28px; }
+      .footer-inner { flex-direction:column; gap:12px; }
     }
 
     @media (prefers-reduced-motion:reduce) {
@@ -410,7 +436,7 @@
             <span class="method-tag">Вариант 1</span>
             <h2>Написать нам</h2>
           </div>
-          <p class="lead">В Telegram откройте канал и нажмите значок сообщений внизу экрана. Мы поможем оформить пост.</p>
+          <p class="lead">В Telegram откройте канал и нажмите значок сообщений внизу экрана.</p>
         </div>
 
         <div class="method-layout">
@@ -467,7 +493,6 @@
             <span class="method-tag">Вариант 2</span>
             <h2>Предложите готовый пост</h2>
           </div>
-          <p class="lead">Сообщения → $ → текст и фото.</p>
         </div>
 
         <div class="steps-grid">
